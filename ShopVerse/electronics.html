@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShopVerse | Electronics</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/electronics.css" />  <!-- Add this line -->
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo">ShopVerse</div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="fashion.html">Fashion</a>
+      <a href="furniture.html">Furniture</a>
+      <a href="beauty.html">Beauty</a>
+      <a href="cart.html" class="cart-icon">🛒 <span id="cart-count">0</span></a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Latest Electronics</h1>
+      <p>Upgrade your life with cutting-edge gadgets and devices</p>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section id="products" class="product-grid">
+    <!-- Drone -->
+    <div class="product-card">
+      <img src="./asserts/drone.jpeg" class="product-image" alt="Drone" height="200px" width="200px">
+      <div class="product-info">
+        <h3>Pro Drone X1</h3>
+        <p>4K camera drone with 30-minute flight time.</p>
+        <div class="price">₹34,999</div>
+        <button class="add-to-cart-btn" onclick="addToCart(this)" >Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Earbuds -->
+    <div class="product-card">
+      <img src="./asserts/earbuds.jpg" class="product-image" alt="Wireless Earbuds" height="300px" width="200px">
+      <div class="product-info">
+        <h3>Wireless Earbuds Pro</h3>
+        <p>Noise cancellation with 20hr battery life.</p>
+        <div class="price">₹8,999</div>
+        <button class="add-to-cart-btn" onclick="addToCart(this)" >Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Headphones -->
+    <div class="product-card">
+      <img src="./asserts/headphones.jpg" class="product-image" alt="Headphones" height="1000px" width="200px">
+      <div class="product-info">
+        <h3>Studio Headphones</h3>
+        <p>Premium over-ear headphones with deep bass.</p>
+        <div class="price">₹12,499</div>
+        <button class="add-to-cart-btn" onclick="addToCart(this)" >Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Laptop -->
+    <div class="product-card">
+      <img src="./asserts/laptop.jpg" class="product-image" alt="Laptop">
+      <div class="product-info">
+        <h3>Ultrabook Pro</h3>
+        <p>Thin and light laptop with 16GB RAM.</p>
+        <div class="price">₹64,999</div>
+        <button class="add-to-cart-btn" onclick="addToCart(this)" >Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Phone -->
+    <div class="product-card">
+      <img src="./asserts/Phone.jpg" class="product-image" alt="Smartphone">
+      <div class="product-info">
+        <h3>Smartphone X</h3>
+        <p>Powerful phone with AI camera and 5G.</p>
+        <div class="price">₹29,999</div>
+        <button class="add-to-cart-btn" onclick="addToCart(this)" >Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Power Bank (JPG version) -->
+    <div class="product-card">
+      <img src="./asserts/powerbank.jpg" class="product-image" alt="Power Bank">
+      <div class="product-info">
+        <h3>Fast Charge Power Bank</h3>
+        <p>20000mAh with 30W fast charging.</p>
+        <div class="price">₹2,499</div>
+        <button class="add-to-cart-btn" onclick="addToCart(this)" >Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Vacuum Robot -->
+    <div class="product-card">
+      <img src="./asserts/vaccum.webp" class="product-image" alt="Vacuum Robot">
+      <div class="product-info">
+        <h3>Roomba 692</h3>
+        <p>Wi-Fi connected robotic vacuum with smart mapping.</p>
+        <div class="price">₹24,999</div>
+        <button class="add-to-cart-btn" onclick="addToCart(this)" >Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Sony Camera -->
+    <div class="product-card">
+      <img src="./asserts/camera.jpg" class="product-image" alt="Sony Camera">
+      <div class="product-info">
+        <h3>Sony Alpha 7C</h3>
+        <p>Compact mirrorless camera with 4K video and high-quality imaging.</p>
+        <div class="price">₹1,49,999</div>
+        <button class="add-to-cart-btn" onclick="addToCart(this)" >Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- TV -->
+    <div class="product-card">
+      <img src="./asserts/tv.jpg" class="product-image" alt="Smart TV">
+      <div class="product-info">
+        <h3>4K Smart TV</h3>
+        <p>55-inch 4K UHD with HDR and Android TV.</p>
+        <div class="price">₹49,999</div>
+        <button class="add-to-cart-btn" onclick="addToCart(this)" >Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Watch -->
+    <div class="product-card">
+      <img src="./asserts/watch.jpg" class="product-image" alt="Smart Watch">
+      <div class="product-info">
+        <h3>Smart Watch Pro</h3>
+        <p>Health tracking and 7-day battery life.</p>
+        <div class="price">₹9,999</div>
+        <button class="add-to-cart-btn" onclick="addToCart(this)" >Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 ShopVerse. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

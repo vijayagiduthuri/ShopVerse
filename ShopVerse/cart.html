@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cart | ShopVerse</title>
+  <link rel="stylesheet" href="CSS/styles.css" />
+  <link rel="stylesheet" href="CSS/cart.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="logo">ShopVerse</div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="electronics.html">Electronics</a>
+      <a href="fashion.html">Fashion</a>
+      <a href="furniture.html">Furniture</a>
+      <a href="beauty.html">Beauty</a>
+      <a href="cart.html" class="cart-icon">🛒 <span id="cart-count">0</span></a>
+    </nav>
+  </header>
+
+  <main class="cart-main">
+    <section class="cart-section">
+      <h1 class="cart-title">Your Shopping Cart</h1>
+      
+      <div id="empty-cart-message" class="empty-cart">
+        <!-- <img src="./asserts/empty-cart.svg" alt="Empty cart" class="empty-cart-img"> -->
+        <p>Your cart is empty</p>
+        <a href="index.html" class="btn">Continue Shopping</a>
+      </div>
+
+      <div id="cart-items-list" class="cart-items">
+        <!-- Cart items will be inserted here by JavaScript -->
+      </div>
+
+      <div id="checkout-section" class="checkout-section">
+        <div class="order-summary">
+          <h3>Order Summary</h3>
+          <div class="summary-row">
+            <span>Subtotal</span>
+            <span id="cart-subtotal">₹0.00</span>
+          </div>
+          <div class="summary-row">
+            <span>Shipping</span>
+            <span id="shipping-cost">FREE</span>
+          </div>
+          <div class="summary-row total-row">
+            <span>Total</span>
+            <span id="cart-total">₹0.00</span>
+          </div>
+        </div>
+        <button onclick="window.location.href='checkout.html'" class="checkout-btn">Proceed to Checkout</button>
+        <div class="continue-shopping">
+          <a href="index.html">← Continue Shopping</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 ShopVerse. All rights reserved.</p>
+  </footer>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>

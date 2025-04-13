@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Checkout | ShopVerse</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/checkout.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="logo">ShopVerse</div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="cart.html" class="cart-icon">🛒 <span id="cart-count">0</span></a>
+    </nav>
+  </header>
+
+  <main class="checkout-container">
+    <div class="checkout-grid">
+      <!-- Order Summary Section -->
+      <section class="order-summary">
+        <h2>Order Summary</h2>
+        <div id="checkout-items" class="checkout-items">
+          <!-- Items will be dynamically inserted here -->
+        </div>
+        <div class="order-totals">
+          <div class="total-row">
+            <span>Subtotal</span>
+            <span id="checkout-subtotal">₹0.00</span>
+          </div>
+          <div class="total-row">
+            <span>Shipping</span>
+            <span>FREE</span>
+          </div>
+          <div class="total-row grand-total">
+            <span>Total</span>
+            <span id="checkout-total">₹0.00</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Checkout Form Section -->
+      <section class="checkout-form-section">
+        <h2>Checkout Details</h2>
+        <form id="checkout-form" class="checkout-form">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+          </div>
+
+          <div class="form-group">
+            <label for="address">Delivery Address</label>
+            <textarea id="address" name="address" placeholder="Enter complete delivery address" rows="4" required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="payment">Payment Method</label>
+            <select id="payment" name="payment" required>
+              <option value="" disabled selected>Select payment method</option>
+              <option value="credit_card">Credit Card</option>
+              <option value="debit_card">Debit Card</option>
+              <option value="upi">UPI Payment</option>
+              <option value="cod">Cash on Delivery</option>
+            </select>
+          </div>
+
+          <div class="form-actions">
+            <a href="cart.html" class="back-link">← Back to Cart</a>
+            <button type="submit" class="btn checkout-btn">Place Order</button>
+          </div>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 ShopVerse. All rights reserved.</p>
+  </footer>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>

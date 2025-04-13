@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beauty Products | ShopVerse</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/beauty.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">ShopVerse</div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="electronics.html">Electronics</a>
+      <a href="fashion.html">Fashion</a>
+      <a href="furniture.html">Furniture</a>
+      <a href="beauty.html">Beauty</a>
+      <a href="cart.html" class="cart-icon">🛒 <span id="cart-count">0</span></a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Glow Up with Beauty Picks</h1>
+      <p>Top-rated skincare, makeup & more for every style!</p>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="product-grid">
+
+    <div class="product-card">
+      <img src="./asserts/lipstick.avif" alt="Lipstick" class="product-image" />
+      <div class="product-info">
+        <h3>Matte Lipstick</h3>
+        <p>Long-lasting, bold color</p>
+        <div class="price">₹299</div>
+        <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="./asserts/eyeliner.jpg" alt="Eyeliner" class="product-image" />
+      <div class="product-info">
+        <h3>Waterproof Eyeliner</h3>
+        <p>Smudge-free finish</p>
+        <div class="price">₹199</div>
+        <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="./asserts/foundation.avif" alt="Foundation" class="product-image" />
+      <div class="product-info">
+        <h3>Liquid Foundation</h3>
+        <p>Natural glowing skin</p>
+        <div class="price">₹499</div>
+        <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="./asserts/facewash.jpg" alt="Face Wash" class="product-image" />
+      <div class="product-info">
+        <h3>Herbal Face Wash</h3>
+        <p>Gentle and refreshing</p>
+        <div class="price">₹149</div>
+        <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="./asserts/perfume.jpeg" alt="Perfume" class="product-image" />
+      <div class="product-info">
+        <h3>Floral Perfume</h3>
+        <p>Elegant, long-lasting scent</p>
+        <div class="price">₹799</div>
+        <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="./asserts/compact.png" alt="Compact Powder" class="product-image" />
+      <div class="product-info">
+        <h3>Compact Powder</h3>
+        <p>Silky smooth matte finish</p>
+        <div class="price">₹349</div>
+        <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="./asserts/serum.avif" alt="Face Serum" class="product-image" />
+      <div class="product-info">
+        <h3>Glow Face Serum</h3>
+        <p>Brightens skin tone</p>
+        <div class="price">₹599</div>
+        <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="./asserts/moisturiser.avif" alt="Moisturizer" class="product-image" />
+      <div class="product-info">
+        <h3>Daily Moisturizer</h3>
+        <p>Hydrates for 24 hours</p>
+        <div class="price">₹299</div>
+        <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="./asserts/makeup.jpg" alt="Makeup Kit" class="product-image" />
+      <div class="product-info">
+        <h3>All-in-One Makeup Kit</h3>
+        <p>Complete beauty essentials</p>
+        <div class="price">₹1299</div>
+        <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 ShopVerse. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

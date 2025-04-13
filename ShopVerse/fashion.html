@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShopVerse | Fashion</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">ShopVerse</div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="electronics.html">Electronics</a>
+      <a href="fashion.html" class="active">Fashion</a>
+      <a href="furniture.html">Furniture</a>
+      <a href="beauty.html">Beauty</a>
+      <a href="cart.html" class="cart-icon">🛒 <span id="cart-count">0</span></a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Discover Your Style</h1>
+      <p>Curated fashion for every occasion</p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- Product Grid -->
+    <section class="product-grid">
+      <div class="product-card" onclick="location.href='men-fashion.html'">
+        <img src="./asserts/mensCorner.jpg" alt="Men Fashion" class="product-image" style="width:300px; height: 300px;">
+        <div class="product-info">
+          <h3>Men's Collection</h3>
+          <p>Trendy styles for men</p>
+          <div style="margin-top: 15px; color: #FEA203; font-weight: bold;">Shop Now →</div>
+        </div>
+      </div>
+
+      <div class="product-card" onclick="location.href='women-fashion.html'">
+        <img src="./asserts/womensCorner.jpg" alt="Women Fashion" class="product-image" style="width: 150px; height: 250px; top: 50px; left: 150px; position: relative;">
+        <div class="product-info">
+          <h3 style="position: relative; top: 60px;">Women's Collection</h3>
+          <p style="position: relative; top: 60px;">Shop the latest looks</p>
+          <div style="margin-top: 15px; color: #FEA203; font-weight: bold;">Shop Now →</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seasonal Banner -->
+    <section style="background: linear-gradient(to right, #1A1A40, #333); padding: 40px; text-align: center; margin: 30px 0;">
+      <h2 style="color: white; margin-bottom: 15px;">Summer Sale: Up to 50% Off</h2>
+      <a href="men-fashion.html" class="btn">Shop the Sale</a>
+    </section>
+
+    <!-- Quick Links -->
+    <div style="display: flex; justify-content: center; gap: 30px; padding: 20px; background: #f5f5f5;">
+      <a href="#" style="color: #333; text-decoration: none;">Size Guide</a>
+      <a href="#" style="color: #333; text-decoration: none;">Shipping Info</a>
+      <a href="#" style="color: #333; text-decoration: none;">Returns Policy</a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 ShopVerse. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

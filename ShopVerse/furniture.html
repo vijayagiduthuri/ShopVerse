@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShopVerse | Furniture</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/furniture.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="logo">ShopVerse</div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="fashion.html">Fashion</a>
+      <a href="furniture.html" class="active">Furniture</a>
+      <a href="beauty.html">Beauty</a>
+      <a href="cart.html" class="cart-icon">🛒 <span id="cart-count">0</span></a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Home Furnishings</h1>
+      <p>Quality furniture for every space in your home</p>
+    </div>
+  </section>
+
+  <section class="product-grid">
+    <!-- Sofa -->
+    <div class="product-card">
+      <div class="furniture-image-container">
+        <img src="./asserts/sofa.jpg" alt="Sofa" class="furniture-image">
+      </div>
+      <div class="product-info">
+        <h3>3-Seater Sofa</h3>
+        <p>Premium fabric with wooden legs</p>
+        <div class="price">₹24,999</div>
+        <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Bed -->
+    <div class="product-card">
+      <div class="furniture-image-container">
+        <img src="./asserts/bed.jpg" alt="Bed" class="furniture-image">
+      </div>
+      <div class="product-info">
+        <h3>King Size Bed</h3>
+        <p>Solid wood with storage</p>
+        <div class="price">₹32,999</div>
+        <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Table -->
+    <div class="product-card">
+      <div class="furniture-image-container">
+        <img src="./asserts/table.jpg" alt="Table" class="furniture-image">
+      </div>
+      <div class="product-info">
+        <h3>Dining Table</h3>
+        <p>6-seater marble top table</p>
+        <div class="price">₹18,499</div>
+        <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Chair -->
+    <div class="product-card">
+      <div class="furniture-image-container">
+        <img src="./asserts/chair.jpg" alt="Chair" class="furniture-image">
+      </div>
+      <div class="product-info">
+        <h3>Ergonomic Chair</h3>
+        <p>Adjustable office chair</p>
+        <div class="price">₹8,999</div>
+        <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Wardrobe -->
+    <div class="product-card">
+      <div class="furniture-image-container">
+        <img src="./asserts/wadrobe.jpg" alt="Wardrobe" class="furniture-image">
+      </div>
+      <div class="product-info">
+        <h3>Sliding Wardrobe</h3>
+        <p>Mirror finish 6-door</p>
+        <div class="price">₹28,999</div>
+        <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- TV Unit -->
+    <div class="product-card">
+      <div class="furniture-image-container">
+        <img src="./asserts/tvunit.avif" alt="TV Unit" class="furniture-image">
+      </div>
+      <div class="product-info">
+        <h3>Modern TV Unit</h3>
+        <p>65" TV size with storage</p>
+        <div class="price">₹14,999</div>
+        <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Study Desk -->
+    <div class="product-card">
+      <div class="furniture-image-container">
+        <img src="./asserts/studydesk.webp" alt="Study Desk" class="furniture-image">
+      </div>
+      <div class="product-info">
+        <h3>Study Desk</h3>
+        <p>With bookshelf and drawer</p>
+        <div class="price">₹7,499</div>
+        <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Shoe Rack -->
+    <div class="product-card">
+      <div class="furniture-image-container">
+        <img src="./asserts/shoerack.jpg" alt="Shoe Rack" class="furniture-image">
+      </div>
+      <div class="product-info">
+        <h3>Shoe Rack</h3>
+        <p>12-pair capacity with seating</p>
+        <div class="price">₹5,999</div>
+        <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Dining Set -->
+    <div class="product-card">
+      <div class="furniture-image-container">
+        <img src="./asserts/dining.jpg" alt="Dining Set" class="furniture-image">
+      </div>
+      <div class="product-info">
+        <h3>6-Piece Dining Set</h3>
+        <p>Table + 6 chairs</p>
+        <div class="price">₹22,999</div>
+        <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 ShopVerse. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
