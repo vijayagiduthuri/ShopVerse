@@ -1,5 +1,4 @@
 // script.js
-
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 // Save cart to localStorage
@@ -121,7 +120,7 @@ function renderCheckoutItems() {
     list.appendChild(div);
     subtotal += item.price * item.quantity;
   });
-  
+
 
   subtotalEl.textContent = `₹${subtotal.toFixed(2)}`;
   totalEl.textContent = `₹${subtotal.toFixed(2)}`;
