@@ -49,7 +49,6 @@ function renderCartItems() {
   cartList.innerHTML = "";
 
   let subtotal = 0;
-
   cart.forEach((item, index) => {
     const div = document.createElement("div");
     div.className = "cart-item";
